@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import Login from './components/presentation/Login';
 import ContentPane from './components/container/ContentPane';
 import { getTypes } from './actions/TypesAction';
-//import { Stitch, AnonymousCredential } from 'mongodb-stitch-browser-sdk';
 import * as RealmWeb from "realm-web";
 
 window.app = new RealmWeb.App({ id: "mmdok-mtkbq" });

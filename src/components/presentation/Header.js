@@ -5,7 +5,7 @@ import {
   NavLink, NavItem,
 } from 'reactstrap';
 import { SEARCH_TAB, WRITE_TAB, VIEW_TAB } from '../../constants';
-//import WebSocket from '../../utils/WebSocket';
+import WebSocket from '../../utils/WebSocket';
 import HttpClient from '../../utils/HttpClient';
 
 const LOGO = '/images/mmdok_vit_svart.png';
@@ -17,8 +17,8 @@ const Header = ({ activeTab, changeTab, filter }) => {
   useEffect(() => {
     console.log("In Use Effect");
     new HttpClient().count((i) => {setCount(i)});
-    //WebSocket(handleNewDocument);
-    //console.log("WebSocket set up");
+    WebSocket(handleNewDocument);
+    console.log("WebSocket set up");
   });
 
   const handleKeyUp = (e) => {

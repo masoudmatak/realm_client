@@ -4,7 +4,6 @@ import {
   Label, Input, Modal, ModalHeader, ModalBody, ModalFooter
 } from 'reactstrap';
 import axios from 'axios';
-import { Stitch, AnonymousCredential } from 'mongodb-stitch-browser-sdk';
 import { SERVER_URL } from '../../constants';
 import * as RealmWeb from "realm-web";
 
@@ -13,10 +12,10 @@ class Login extends React.Component {
   constructor(props) {
     super(props);
     this.loginUser = this.props.loginUser;
-    modal: false,
       this.state = {
         email: '',
         password: '',
+        modal: false,
         isLoginFailed: false,
         validate: {
           emailState: '',
