@@ -7,7 +7,7 @@
     "bootstrap": "^4.1.1",
     "classnames": "^2.2.6",
     "file-saver": "^2.0.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-pdfobject": "^1.1.1",
